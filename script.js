@@ -35,3 +35,20 @@ function remove() {
 
   return false;
 };
+
+function show() {
+  let todos = get_todos(); //retrieve list items
+
+  let html = '<ul>'; //initialize html var as the start of a list
+  for (let i=0; i<todos.length; i++){
+    html += '<li>' + todos[i] + '<button class="remove" id="' + i + '">Delete</button> </li>'; //add a list item containing the each task and delete button
+  };
+  html += '</ul>'; //end list
+
+  document.getElementById('todos').innerHTML = html; //put html var into the actual HTML in todos section
+
+  let buttons = document.getElementsByClassName('remove'); //declare a var to represent all remove buttons
+  for (let i=0; i<buttons.length; i++) {
+    buttons[i].addEventListener('click', remove); //if each is clicked, run remove
+  };
+};
