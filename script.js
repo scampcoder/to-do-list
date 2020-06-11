@@ -17,4 +17,10 @@ function add() {
   show(); //implement show function
 
   return false; //avoid further action of click event
-}
+};
+
+function clearDefault(a) { //checks if there is text in the input after adding and clears it
+  if (a.defaultValue == a.value) {
+    a.value = "";
+  }
+};
