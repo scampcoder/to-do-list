@@ -16,15 +16,13 @@ function add() {
   localStorage.setItem("todo", JSON.stringify(todos)); //save returned strings to localStorage (setItem)
 
   show(); //implement show function
-
+  clearDefault(); //clear input
   return false; //avoid further action of click event
 }
 
 function clearDefault(a) {
   //checks if there is text in the input after adding and clears it
-  if (a.defaultValue == a.value) {
-    a.value = "";
-  }
+  document.getElementById('task').value = "";
 }
 
 function remove() {
