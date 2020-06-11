@@ -21,3 +21,14 @@ body {
   height: 20px;
   border-style: none;
 }
+
+#wrapper {
+  width: 450px;
+  background-color: #000365;
+  margin-top: 120px;
+  margin-left: 295px;
+  padding-bottom: 30px;
+  padding-left: 50px;
+  padding-right:65px;
+  border-radius: 25px;
+}
