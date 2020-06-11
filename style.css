@@ -38,3 +38,9 @@ ul {
   text-align: left;
   line-height: 35px;
 }
+
+#task {
+  width: 320px;
+  height: 30px;
+  margin-left: 17px;
+}
