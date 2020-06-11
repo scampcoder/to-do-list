@@ -32,3 +32,9 @@ body {
   padding-right:65px;
   border-radius: 25px;
 }
+
+ul {
+  list-style: none;
+  text-align: left;
+  line-height: 35px;
+}
