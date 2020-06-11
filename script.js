@@ -24,3 +24,14 @@ function clearDefault(a) { //checks if there is text in the input after adding a
     a.value = "";
   }
 };
+
+function remove() {
+  const id = this.getAttribute('id'); //retrieve selected item to remove
+  let todos = get_todos();
+  todos.splice(id, 1); //remove the item from the array
+  localStorage.setItem('todos', JSON.stringify(todos)); //store new array as a string
+
+  show();
+
+  return false;
+};
