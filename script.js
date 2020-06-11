@@ -52,3 +52,6 @@ function show() {
     buttons[i].addEventListener('click', remove); //if each is clicked, run remove
   };
 };
+
+document.getElementById('add').addEventListener('click', add); //when add button clicked, run add
+show();
