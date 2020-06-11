@@ -29,7 +29,7 @@ function remove() {
   const id = this.getAttribute("id"); //retrieve selected item to remove
   let todos = get_todos();
   todos.splice(id, 1); //remove the item from the array
-  localStorage.setItem("todos", JSON.stringify(todos)); //store new array as a string
+  localStorage.setItem("todo", JSON.stringify(todos)); //store new array as a string
 
   show();
 
